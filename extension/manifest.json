@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "testing",
+    "version": "2.0",
+    "description": "Detects phishing",
+    "host_permissions": [
+      "http://localhost:5000/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "check.png",
+      "128": "error.png"
+    },
+    "permissions": ["activeTab", "storage", "tabs"],
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html", "popup.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+}

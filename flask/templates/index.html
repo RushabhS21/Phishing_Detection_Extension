@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/static/css/output.css"> -->
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+            color: rgb(0, 0, 0); /* Adjust the value to control the gap */
+        }
+        td {
+            padding: 5px; /* Add padding for each cell if needed */
+        }
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <div class="">
+        <!-- <form action="/info" method="POST" class="flex items-center">
+            <input type="text" placeholder="Enter url" name="url_manual" id="ipurl" class="mt-5 rounded-sm" max="20">
+            <button type="submit" class="bg-green-600 rounded-md p-1 text-white border-cyan-200 mt-5 ml-2">  Check</button>
+        </form> -->
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Domain Name: </td>
+                    <td>{{ domain_name }}</td>
+                    <!-- <td>{{ server_name }}</td> -->
+                </tr>
+                <tr>
+                    <td>Server Name: </td>
+                    <td>{{ server_name }}</td>
+                </tr>
+                <tr>
+                    <td>Domain Name System Security Extensions</td>
+                    <td>{{   dnssec }}</td>
+                </tr>
+                <tr>
+                    <td>Domain Creation date : </td>
+                    <td>{{   creation_date }}</td>
+                </tr>
+                <tr>
+                    <td>Organization : </td>
+                    <td>{{   org }}</td>
+                </tr>
+                <tr>
+                    <td>Registrar : </td>
+                    <td>{{   registrar }}</td>
+                </tr>
+                <tr>
+                    <td>Country : </td>
+                    <td>{{   country }}</td>
+                </tr>
+                <tr>
+                    <td>State : </td>
+                    <td>{{   state }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</center>
+
+
+
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>testing</p>
+</body>
+</html> -->
